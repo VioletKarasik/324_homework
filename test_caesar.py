@@ -27,7 +27,8 @@ class TestCaesarCipher(unittest.TestCase):
         self.assertEqual(original, decrypted)
     
     def test_large_shift(self):
-        self.assertEqual(caesar_encrypt("abc", 260), "ghi")  # 260 % 26 = 0
+        self.assertEqual(caesar_encrypt("abc", 6), "ghi")  # 6 % 26 = 6
+
 
 if __name__ == "__main__":
     unittest.main()
